@@ -1,6 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { combineLatest, Observable } from "rxjs";
+import {combineLatest, Observable, of} from "rxjs";
 import { PagedAPIResult, Pokemon, PokemonInfo } from "./models";
 
 @Injectable({
@@ -11,16 +11,16 @@ export class PokeAPIService {
         private client: HttpClient
     ) { }
 
-    fetchPokemons() {
+    fetchPokemons(limit: number, offset: number) {
         return this.client
-            .get<PagedAPIResult<PokemonInfo>>('https://pokeapi.co/api/v2/pokemon');
+            .get<PagedAPIResult<PokemonInfo>>('https://pokeapi.co/api/v2/pokemon?limit='+limit+'&offset='+offset);
     }
 
     fetchFullPokemonForPage(page: PagedAPIResult<PokemonInfo>): Observable<Pokemon[]> {
         // Combine latest nous permet de prendre un tableau d'observable
         // Et de le transformer en un observable de tableau
         // On attend que chaque requete ait fini pour les regrouper
-        
+
         const requests = page.results
             // .map sur le tableau de resultat permet de mapper chaque (PokemonInfo) vers un (Pokemon)
             .map(pInfo => this.fetchPokemon(pInfo.url));
