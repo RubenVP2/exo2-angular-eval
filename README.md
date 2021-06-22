@@ -8,8 +8,8 @@ Une fois votre devoir terminer, envoyer le moi par mail à l'adresse : ange.pica
 
 ## Informations
 
-Nom:   
-Prenom:  
+Nom:   VELOSO PAULOS
+Prenom:  Ruben
 
 ## Question ouvertes
 
@@ -18,37 +18,38 @@ Merci de répondre avec vos mots, même s'ils sont inexactes, je veux voir que v
 ### Qu'est qu'Angular et quel est son intérêt ?
 
 ```
-Votre réponse
+Angular est un framework pour faciliter le développement FRONT, il permet de développer des applications sécurisées et complètes sans le besoin d'utiliser des extensions ou packages extérieurs.
 ```
 
 ### Qu'est-ce-qu'un composant
 
 ```
-Votre réponse
+C'est une partie / un bloc qui va contenir des éléments de la page, une page est architecturé de plusieurs composants.
 ```
 
 ### Comment est découper un composant dans Angular ?
 
 ```
-Votre réponse
+Il possède un template pour l'ihm, une classe TS ainsi que dans celle-ci les imports, décorateurs.
 ```
 
 ### Pourquoi vaut-il mieux faire de petit composant ?
 
 ```
-Votre réponse
+Pour avoir une meilleur architecture de notra application, et aussi éviter qu'un composant ait trop de code HTML ce qui ferait des composants lourd et ne faciliterait pas le développement. 
 ```
 
 ### A quoi sert un service ?
 
 ```
-Votre réponse
+Les services permettent de partager des valeurs / informations entre différents composants / classes grâce à l'injection de dépendances. C'est ici que les données sont récupérées et enregistrées.
 ```
 
 ### Qu'est-ce-qu'un observable, et quel est son intérêt ?
 
 ```
-Votre réponse
+Un observable est un objet qui transmet du flux, nous pouvons ensuite s'abonner à ces flux pour faire des opérations dessus.
+
 ```
 
 ## Exercice 1
