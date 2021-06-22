@@ -8,7 +8,7 @@ Une fois votre devoir terminer, envoyer le moi par mail à l'adresse : ange.pica
 
 ## Informations
 
-Nom:   VELOSO PAULOS
+Nom:   VELOSO PAULOS  
 Prenom:  Ruben
 
 ## Question ouvertes
